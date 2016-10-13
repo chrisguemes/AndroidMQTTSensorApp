@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/MQTTPrefTitle">
+        <EditTextPreference
+            android:key="server"
+            android:title="@string/MQTTServerPrefTitle"
+            android:summary="@string/MQTTServerPrefSummary"
+            android:defaultValue="@string/MQTTServerPrefDefault"/>
+        <EditTextPreference
+            android:key="user"
+            android:title="@string/MQTTUserPrefTitle"
+            android:summary="@string/MQTTUserPrefSummary"
+            android:defaultValue="@string/MQTTUserPrefDefault" />
+        <EditTextPreference
+            android:key="password"
+            android:title="@string/MQTTPwdPrefTitle"
+            android:summary="@string/MQTTPwdPrefSummary"
+            android:defaultValue="@string/MQTTPwdPrefDefault" />
+        <EditTextPreference
+            android:key="port"
+            android:title="@string/MQTTPortPrefTitle"
+            android:summary="@string/MQTTPortPrefSummary"
+            android:defaultValue="@string/MQTTPortPrefDefault" />
+        <CheckBoxPreference
+            android:key="tls"
+            android:title="@string/MQTTchkTLSPrefTitle"
+            android:summary="@string/MQTTchkTLSPrefSummary"
+            android:defaultValue="@string/MQTTTLSPrefDefault"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/AppPrefTitle">
+        <CheckBoxPreference
+            android:key="connectOnStart"
+            android:title="@string/AppConnectPrefTitle"
+            android:summary="@string/AppConnectPrefSummary"
+            android:defaultValue="@string/AppConnectPrefDefault"/>
+        <CheckBoxPreference
+            android:key="getValuesOnStart"
+            android:title="@string/AppGetValuesPrefTitle"
+            android:summary="@string/AppGetValuesPrefSummary"
+            android:defaultValue="@string/AppGetValuesPrefDefault"/>
+    </PreferenceCategory>
+</PreferenceScreen>

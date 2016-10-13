@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.widelen.widelenapp.CloudActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/blue_back_cloud">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cloudImage"
+        android:layout_gravity="center"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.49">
+            <Button style="@style/BtnStyle" android:id="@+id/btnSettings"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btnConnect"
+                android:text="@string/disconnected_to_broker_server"
+                android:gravity="center_horizontal|bottom"
+                android:textSize="12sp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btn13"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50">
+            <Button style="@style/BtnStyle" android:id="@+id/btnTemperature"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btn22"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btn23"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.59">
+            <Button style="@style/BtnStyle" android:id="@+id/btnHumidity" />
+            <Button style="@style/BtnStyle" android:id="@+id/btn32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button style="@style/BtnStyle" android:id="@+id/btn41"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btn42"/>
+            <Button style="@style/BtnStyle" android:id="@+id/btn43"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettings"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTemperature"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnSettings"
+        android:layout_marginTop="30px"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSensor3"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/btnTemperature"
+        android:layout_toRightOf="@+id/btnTemperature"
+        android:layout_marginLeft="20px"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConnect"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/btnSensor3"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHumidity"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnTemperature"
+        android:layout_toRightOf="@id/btnTemperature"
+        android:layout_marginLeft="-40px"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSensor4"
+        android:src = "@drawable/boton_mask"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnHumidity"
+        android:layout_toRightOf="@+id/btnHumidity"
+        android:layout_marginLeft="-40px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnected"
+        android:id="@+id/ConnectionStatus"
+        android:layout_above="@+id/btnSensor3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/TxtGlobalDataStyle"
+                android:text="Temp.: -- ºC"
+                android:id="@+id/txtTemperature"/>
+
+            <TextView style="@style/TxtGlobalDataStyle"
+                android:text="CO2:  -- ppm"
+                android:id="@+id/txtCO2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/TxtGlobalDataStyle"
+                android:text="Hum.: -- %"
+                android:id="@+id/txtHumidity"/>
+
+            <TextView style="@style/TxtGlobalDataStyle"
+                android:text="Part.: -- TPS"
+                android:id="@+id/txtParticles"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">WidelenApp</string>
+	<string name="temp_title">Temperature Graph</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="pie_chart">Widelen Pie Chart</string>
+    <string name="line_chart">Widelen Line Chart</string>
+    <string name="title_activity_cloud">CloudActivity</string>
+
+    <string name="disconnected_to_broker_server">Disconnected</string>
+    <string name="connected_to_broker_server">Connected</string>
+    <string name="connecting_to_broker_server">Connecting...</string>
+    <string name="no_received_data">There is no received data.</string>
+    <string name="select_target_device_title">Device</string>
+    <string name="no_selectable_device">There is no selectable a device.</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_publish_topic">Publish Topic</string>
+    <string name="settings_subscribe_topic">Subscribe Topic</string>
+    <string name="settings_broker_address">Broker Address</string>
+    <string name="settings_device_type">Device Type</string>
+    <string name="settings_token">Token</string>
+    <string name="settings_qos">QoS</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="connect">Connect</string>
+    <string name="average">AVG</string>
+    <string name="average_100">Recent 100\'s AVG</string>
+    <string name="suffix_has_been_disconnected">has been disconnected.</string>
+    <string name="retrieving_device_list">Retrieving device list.</string>
+    <string name="temperature_sensor">Temperature</string>
+    <string name="humidity_sensor">Humidity</string>
+    <string name="co2_sensor">CO2</string>
+    <string name="particles_sensor">Particles</string>
+    <string name="mqtt">CloudMQTT</string>
+    <string name="organization">Organization</string>
+    <string name="device_type">Device Type</string>
+    <string name="api_key">Api Key</string>
+    <string name="api_key_token">Api Key Token</string>
+    <string name="authorization_token">Authorization Token</string>
+    <string name="connection_is_failed">Connection is failed.</string>
+    <string name="close">Close</string>
+    <string name="set">Set</string>
+    <string name="device_searching">Searching...</string>
+    <string name="temperature_alert_is_invalid">Temperature alert is invalid.</string>
+    <string name="light_alert_is_invalid">Light alert is invalid.</string>
+    <string name="temperature_alert">Temperature alert</string>
+    <string name="light_alert">Light alert</string>
+    <string name="higher_than">Higher than</string>
+    <string name="lower_than">Lower than</string>
+    <string name="license_contents">Disclaimer:\nThis app is used Paho, MPAndroidChart, json-simple, Apache HttpComponents.\nPaho : https://eclipse.org/paho/ \nMPAndroidChart : https://github.com/PhilJay/MPAndroidChart \njson-simple: https://code.google.com/p/json-simple/ \nApache HttpComponents : http://hc.apache.org/ \nApache License, Version 2.0 : http://www.apache.org/licenses/LICENSE-2.0.html</string>
+    <string name="settings_use_tls">Use secured connection</string>
+    <string name="title_activity_testdebug">testdebug</string>
+
+    <string name="MQTTPrefTitle">Cloud MQTT instance info</string>
+    <string name="MQTTServerPrefTitle">Server</string>
+    <string name="MQTTServerPrefSummary">Introduce server address</string>
+    <string name="MQTTUserPrefTitle">User</string>
+    <string name="MQTTUserPrefSummary">Introduce server information</string>
+    <string name="MQTTPwdPrefTitle">Password</string>
+    <string name="MQTTPwdPrefSummary">Introduce password information</string>
+    <string name="MQTTPortPrefTitle">Port</string>
+    <string name="MQTTPortPrefSummary">Introduce port to connect</string>
+    <string name="MQTTchkTLSPrefTitle">Security connection</string>
+    <string name="MQTTchkTLSPrefSummary">Set if use TLS connection</string>
+
+    <string name="AppPrefTitle">Application Default Settings</string>
+    <string name="AppConnectPrefTitle">Cloud Connect on start</string>
+    <string name="AppConnectPrefSummary">Set to launch server connection on application start</string>
+    <string name="AppGetValuesPrefTitle">Get instant values on application start</string>
+    <string name="AppGetValuesPrefSummary">Set to get instant values on application start</string>
+
+    <string name="MQTTServerPrefDefault">m20.cloudmqtt.com</string>
+    <string name="MQTTUserPrefDefault">nnfxzzcl</string>
+    <string name="MQTTPwdPrefDefault">SQsySBKcJMZq</string>
+    <string name="MQTTPortPrefDefault">17159</string>
+    <string name="MQTTTLSPrefDefault">false</string>
+    <string name="AppConnectPrefDefault">true</string>
+    <string name="AppGetValuesPrefDefault">true</string>
+
+    <string name="CloudDialogConnectTitle">MQTT connection</string>
+    <string name="CloudDialogConnectMessage">Connect to MQTT server?</string>
+    <string name="CloudDialogDisconnectMessage">Disconnect to MQTT server?</string>
+    <string name="CloudDialogError">ERROR: Already connection in process</string>
+
+    <string name="MQTT_INSTANT_VALUES_ENABLE">INSTANT ON</string>
+    <string name="MQTT_INSTANT_VALUES_DISABLE">INSTANT OFF</string>
+
+    <string name="MQTT_TX_TOPIC">widelen/mobile_msg/</string>
+    <string name="MQTT_RX_TOPIC">widelen/device_msg/</string>
+    <string name="title_activity_temp_graph">TempGraphActivity</string>
+
+
+</resources>
